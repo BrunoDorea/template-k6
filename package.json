@@ -1,0 +1,15 @@
+{
+    "name": "k6-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "token": "k6 run tests/auth/gera-token.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
