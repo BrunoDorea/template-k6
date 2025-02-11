@@ -1,15 +1,14 @@
 {
     "name": "k6-template",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "Template base para projetos utilizando o k6",
     "directories": {
         "test": "tests"
     },
     "scripts": {
-        "token": "k6 run tests/auth/gera-token.js"
+        "test": "k6 run --out json=results/results.json tests/script.js"
     },
     "keywords": [],
-    "author": "",
+    "author": "Bruno Dórea",
     "license": "ISC"
 }
