@@ -12,8 +12,14 @@ jobs:
 
             - name: Instalar o k6
               run: |
-                    sudo apt update
-                    sudo snap install k6
+                  sudo apt update
+                  sudo snap install k6
 
-            - name: Rodar Teste de Performance
-              run: npm run performance
+            - name: Rodar Teste de Performance e gerar JSON
+              run: npm run test
+
+            - name: Salvar Relatório de Performance
+              uses: actions/upload-artifact@v4
+              with:
+                  name: k6-performance-report
+                  path: results/results.json
