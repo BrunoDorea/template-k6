@@ -6,7 +6,6 @@
         "test": "tests"
     },
     "scripts": {
-        "performance": "k6 run tests/script.js",
         "test": "k6 run --out json=results/results.json tests/script.js"
     },
     "keywords": [],
